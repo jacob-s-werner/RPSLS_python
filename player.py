@@ -25,3 +25,6 @@ class Player:
 
     def print_gesture_chosen(self):
         print(f"{self.name} chose {self.current_gesture}")
+
+    def set_name(self):
+        self.name = input("Enter your name")
