@@ -18,6 +18,10 @@ class Player:
             try:
                 chosen_gesture = int(input("Enter Number: "))
                 self.current_gesture = self.list_of_gestures[chosen_gesture - 1]
+                self.print_gesture_chosen()
                 break
             except ValueError:
                 print(ValueError)
+
+    def print_gesture_chosen(self):
+        print(f"{self.name} chose {self.current_gesture}")
